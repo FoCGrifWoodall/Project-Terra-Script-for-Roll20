@@ -16,7 +16,6 @@ This way, any information to the scripts that was discovered will be easily sear
 
 
 To Do:
-(01)Test Token Automated Movement with multiple directions and variating cycles
 (02)Test Automated Response for a Marker/Token getting close enough to another Token/Marker
 (03)Test Buy/Sell system using Player Inventory Money Value with a logged Item List(Automated Inventory Management)
 Test Buttons on a handout to see if it's possible
@@ -30,7 +29,7 @@ Test Player Companion Scripts about responding to player status (For example, ex
 Possibly More Things Later...
 
 In Progress:
-Nothing-Quit being Lazy D:
+(01)Test Token Automated Movement with multiple directions and variating cycles
 
 Completed:
 Nothing-I cri errytiem q_q
