@@ -1,0 +1,21 @@
+//Pulled from the use guide on the Roll20 Wiki
+//An asterisk notes original comments by the Roll20 that I left in.
+//Modifications done to test movement(patrols and variating patrols)
+//For the test script I'm just gonna pull a character token made for one of the players as an NPC(which is lolzers18)
+//If you're curious why it's lolzers18 and not lolzers it's because the final edit was the 18th one
+on("ready", function() {
+   //*Wait until the ready event fires so we know the game is completely loaded.
+   //*Get a reference to our patrolling token.
+   var testpatroltokenlolzers18 = findObjs({_type: "graphic", name: "lolzers18"})[0]; 
+   var direction = -1*distanceToPixels(5); //Move the token left 5 feet, 5 feet=1 unit=70 pixels, via default settings
+   var stepstaken = 0; //step counter, simple enough.
+   PatrolTokenController(function() {
+     if(stepstaken < 6) {
+       patroltoken.set("left", testpatroltoken.get("left") + direction); //walk left, the direction system is annoyinf af at first
+     }
+     else if(stepstaken >= 6 & stepstaken < 12) {
+        //start moving up
+     }
+     stepstaken++; //increase stepcounter by 1
+   }, 5000); //take an action every 5 seconds
+});
